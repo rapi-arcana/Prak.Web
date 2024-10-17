@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.todo-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    box-sizing: border-box; /* Menjaga ukuran kontainer */
+    overflow: hidden; /* Pastikan elemen tidak keluar dari kontainer */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Batasi input agar tidak melampaui kontainer */
+input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Pastikan padding tidak mempengaruhi ukuran */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Pastikan elemen tidak keluar dari kontainer */
+}
+
+li span {
+    flex-grow: 1; /* Teks memenuhi ruang yang tersedia */
+    margin-right: 10px; /* Jarak antara teks dan tombol */
+    word-wrap: break-word; /* Membungkus kata jika terlalu panjang */
+    max-width: 100%; /* Membatasi lebar maksimum agar tidak tembus */
+    overflow-wrap: break-word; /* Agar teks terbungkus jika terlalu panjang */
+    white-space: normal; /* Membungkus teks panjang ke baris berikutnya */
+}
+
+li button {
+    background-color: #ff6b6b;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-shrink: 0; /* Mencegah tombol mengecil */
+}
+
+li button:hover {
+    background-color: #ff4e4e;
+}
+
+li button.edit {
+    background-color: #007bff;
+}
+
+li button.edit:hover {
+    background-color: #0069d9;
+}
+
+input[type="text"].edit-mode {
+    border: 2px solid #007bff;
+}
