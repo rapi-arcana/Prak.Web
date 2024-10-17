@@ -1,0 +1,282 @@
+:root {
+    --primary-color: #14274A;
+    --secondary-color: #E0B973;
+    --text-color: #333;
+    --white: #fff;
+}
+
+body {
+    margin: 0;  
+    padding: 0;
+}
+
+header {
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    padding: 20px 5%;
+    padding-top: 0%;
+    display: flex;
+    justify-content: space-between; /* Membuat logo dan navigasi berada di ujung yang berbeda */
+    align-items: center; /* Agar logo tetap di bagian atas */
+    background: transparent;
+    transition: all .50s ease;
+}
+
+.logo img {
+    max-height: 90px; /* Sesuaikan tinggi logo */
+    width: auto;
+    margin-left: 150px;
+    margin-top: 0;
+}
+
+nav ul {
+    list-style: none; /* Menghilangkan bullet points */
+    display: flex; /* Membuat menu dalam satu baris */
+    gap: 80px; /* Jarak antar menu */
+}
+nav ul li a {
+    color: white; /* Warna teks */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: yellow; /* Warna saat hover */
+}
+
+section{
+    padding: 80px;
+}
+#home {
+    position: relative;
+    background-image: linear-gradient(to left, rgba(0,0,0,0.1),rgba(0,0,0,0.3)),url(/assets/gabriel\ ghnassia\ A9h6OsAxTyQ\ unsplash.png);
+    background-size: cover;
+    background-position: bottom center;
+    height: 850px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--white);
+}
+#home-text h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+#home-text h1 {
+    font-family: "Crimson Pro", serif;
+    font-size: 100px;
+    font-weight: 300;  
+    margin-top: 0;
+    margin-bottom: 0; 
+}
+#home-text p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 0;
+    letter-spacing: 3px;
+}
+a.btn{
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border-radius: 10px;
+    display:inline-block;
+    padding: 16px;
+    width: 120px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+button {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px; /* Sesuaikan padding untuk mengontrol ukuran tombol */
+    font-size: 15px;
+    text-align: center;
+    display: inline-block; /* Agar lebar tombol sesuai konten */
+}
+
+#rooms {
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#rooms h2 {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 24px;
+    color: #333;
+}
+
+.room {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.room:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.room img {
+    width: 50%;
+        object-fit: cover;
+    border-radius: 8px;
+}
+
+.room-info {
+    width: 45%;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.room-info::before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #F5CC6F;
+}
+
+.room-info h3 {
+    font-family: "Crimson Pro", serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.room-info p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.explore-btn {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: #e0b75f;
+}
+
+#testimonials {
+    text-align: center;
+    margin-top: 5px;
+}
+
+#testimonials h2 {
+    font-family: "Crimson Pro", serif;
+    font-size: 50px;
+    font-weight: 100;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.testimonial {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-color);
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonial-author {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color:var(--primary-color);
+}
+
+.testimonial-nav {
+    margin-top: 20px;
+}
+
+.testimonial-nav button {
+    background-color:var(--secondary-color);
+    color: var(--white);
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.testimonial-nav button:hover {
+    background-color: #e0b75f;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 32px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo {
+    font-size: 30px;
+    font-weight: 100;
+}
+.footer-links, .footer-social, .footer-newsletter {
+    margin-top: 16px;
+}
+footer h4 {
+    margin-bottom: 8PX;
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+footer ul li {
+    margin-bottom: 8px;
+}
+footer a {
+    color: var(--white);
+    text-decoration: none;
+}
+footer form {
+    display: flex;
+    margin-top: 8px;
+}
+footer input[type="email"] {
+    padding: 8px;
+    width: 200px;
+}
+footer button {
+    padding: 8px 16px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+}
