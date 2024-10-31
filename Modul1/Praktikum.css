@@ -54,7 +54,7 @@ section{
 }
 #home {
     position: relative;
-    background-image: linear-gradient(to left, rgba(0,0,0,0.1),rgba(0,0,0,0.3)),url(/assets/gabriel\ ghnassia\ A9h6OsAxTyQ\ unsplash.png);
+    background-image: linear-gradient(to left, rgba(0,0,0,0.1),rgba(0,0,0,0.3)),url(assets/gabriel\ ghnassia\ A9h6OsAxTyQ\ unsplash.png);
     background-size: cover;
     background-position: bottom center;
     height: 850px;
