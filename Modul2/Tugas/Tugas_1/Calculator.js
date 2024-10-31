@@ -18,11 +18,11 @@ function calculateResult() {
     try {
         let expression = display.value;
 
-        // Mengganti operator pangkat (^) dengan Math.pow()
+        // Mengganti operator pangkat (^) dengan exponentiation operator (**)
         expression = expression.replace('^', '**');
 
         // Menghitung hasil ekspresi
-        let result = eval(expression);
+        let result = eval(expression); // Sudah mendukung modulus (%), jadi tidak perlu perubahan
 
         // Menampilkan hasil
         display.value = result;
